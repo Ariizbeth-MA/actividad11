@@ -40,13 +40,13 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""   #Se dibujo el circulo 
-	up()
-	goto (start.x, start.y)
-	down ()
-	begin_fill()
-	r =math.sqrt((abs((int(end.x-start.x)))^2)+abs ((int((end.y - start.y)))^2))
-	turtle.circle(r*2)   # con ayuda de la función de python math se dibujo el circulo 
-	end_fill()    
+    up()
+    goto (start.x, start.y)
+    down ()
+    begin_fill()
+    r =math.sqrt((abs((int(end.x-start.x)))^2)+abs ((int((end.y - start.y)))^2))
+    turtle.circle(r*2)   # con ayuda de la función de python math se dibujo el circulo 
+    end_fill()    
 
 
 def rectangle(start, end):
@@ -87,7 +87,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
-onkey (lambda: colo('cian'),'C')   #Se agrego un color
+onkey(lambda: color('purple'),'P')   #Se agrego un color
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
